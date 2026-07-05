@@ -1,0 +1,8 @@
+name: RTPCore
+version: '${version}'
+
+main: org.mintype.rTPCore.RTPCore
+api-version: '26.2'
+load: POSTWORLD
+
+authors: [ Mintype ]
