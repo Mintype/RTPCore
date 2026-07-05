@@ -31,7 +31,7 @@ public class RTPCommand implements CommandExecutor {
 
             plugin.getRtpManager().teleport(player);
 
-            player.sendMessage(ChatColor.GREEN + "Teleporting...");
+//            player.sendMessage(ChatColor.GREEN + "Teleporting...");
             return true;
         }
 
