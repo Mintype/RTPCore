@@ -6,3 +6,84 @@ api-version: '26.2'
 load: POSTWORLD
 
 authors: [ Mintype ]
+
+commands:
+  rtp:
+    description: Random teleport command.
+    usage: /rtp help
+    aliases:
+      - randomtp
+      - wild
+    permission: rtpcore.rtp
+    permission-message: "&cYou don't have permission."
+
+permissions:
+  rtpcore.*:
+    description: Gives access to every RTPCore permission.
+    default: op
+    children:
+      rtpcore.rtp: true
+      rtpcore.help: true
+      rtpcore.reload: true
+      rtpcore.admin: true
+      rtpcore.rtp.others: true
+      rtpcore.bypass.cooldown: true
+      rtpcore.bypass.delay: true
+      rtpcore.bypass.world: true
+      rtpcore.set.radius: true
+      rtpcore.set.cooldown: true
+      rtpcore.set.delay: true
+      rtpcore.set.world: true
+      rtpcore.set.center: true
+
+  rtpcore.rtp:
+    description: Use /rtp.
+    default: true
+
+  rtpcore.help:
+    description: View the help menu.
+    default: true
+
+  rtpcore.rtp.others:
+    description: Teleport another player.
+    default: op
+
+  rtpcore.reload:
+    description: Reload the plugin configuration.
+    default: op
+
+  rtpcore.admin:
+    description: Access all admin subcommands.
+    default: op
+
+  rtpcore.set.radius:
+    description: Change the RTP radius.
+    default: op
+
+  rtpcore.set.cooldown:
+    description: Change the RTP cooldown.
+    default: op
+
+  rtpcore.set.delay:
+    description: Change the RTP warmup delay.
+    default: op
+
+  rtpcore.set.world:
+    description: Change the RTP world.
+    default: op
+
+  rtpcore.set.center:
+    description: Change the RTP center location.
+    default: op
+
+  rtpcore.bypass.cooldown:
+    description: Ignore RTP cooldowns.
+    default: op
+
+  rtpcore.bypass.delay:
+    description: Ignore RTP warmup.
+    default: op
+
+  rtpcore.bypass.world:
+    description: Ignore world restrictions.
+    default: op
